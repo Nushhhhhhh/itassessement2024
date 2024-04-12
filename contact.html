@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title> Contact-Grand Gala Grandeur </title>
+    <link rel="icon" href="logo.png" type = "image/x-icon">
+    <script>
+        function validateForm() {
+            var name = document.getElementById('name').value;
+            var email = document.getElementById('email').value;
+            var phoneNumber = document.getElementById('phoneNumber').value;
+            var message = document.getElementById('message').value;
+
+            var errorMessage = document.getElementById('errorMessage')
+
+            var errorMessage='';
+
+            if (name == '' || email == '' || phoneNumber == '' || message == '') {
+                errorMessage += 'Please enter all the required fields.';
+            }
+            if (errorMessage) {
+                alert(errorMessage);
+                return false;
+            } else {
+                alert('Submitted successfully!');
+                return true;
+            }        
+        }
+    </script>
+</head>
+<body>
+    <div style="border: 5px solid black;">
+    <!--Header-->
+    <p> </p> 
+     <!--Navigation Bar-->
+     <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li style="float: right;"><a href="reservation.html">Reservation</a></li>
+        </ul>
+    </nav>
+    <div class="bgimage">
+        <br><br><br>
+        <div class="contactContainer">
+            <div class="contactimg">
+                <div style=" border: 4px solid #945044; background-color: black ">
+                    <img src=" Images/contact.png" alt="Conutact us " width="445px" height="658px">
+                </div>
+            </div>
+            <!--Reservation Form-->
+            <div style=" border: 4px solid #945044; background-color: #e1a196;  width: 1200px; margin: auto; margin-top: 10px;">
+            <h5>
+                <form action=" " id="contactForm" onsubmit="return validateForm()">
+                <table>
+                <font style="font-size: xx-large; font-family: Arial, Helvetica, sans-serif; font-weight: bold;">
+                <tr><center><u>Have Questions? Shoot Us</u></center></tr>
+                </font>
+                <div id="errorMessage"></div>
+                <br>
+                Want to get in touch? We'd love to hear from you. Send us direct message as you fill the form with you enquiry.    
+                <br><br>
+                <tr>
+                    <td>Name:</td>
+                    <td>
+                    <input type="text" placeholder="Enter Your Name" id="name">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Email:</td>
+                    <td>
+                    <input type="email" placeholder="Enter a valid Email" id="email">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Phone number:</td>
+                    <td>
+                        <input type="number" placeholder="Enter your number" id="phoneNumber">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Screenshot<sup>(Optional)</sup></td>
+                    <td>
+                        <input type="file" id="Upload">
+                    </td>
+                </tr>
+                <tr>
+                    <td>How can we help you?</td>
+                    <td>
+                    <textarea id="message" name="message" placeholder="Write a message" rows="10" cols="50"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    <td>    
+                    <input type="submit" value="Send Message">
+                    <input type="reset" value="Clear the form">
+                    </td>
+                    </td>
+                </tr>
+                </table>
+                <center>
+                <h2>Or</h2>
+                Send us an Email at <a href="mailto:ranuska23@tbc.edu.np"> ranuska23@tbc.edu.np </a>
+                </center>
+                <br><br>
+                <font style="font-family: cursive ; font-size: large; font-style: italic;"> <center> We will reach out soon. Thank You!! </center> </font>
+            </form>
+            </div>
+        </h5>
+        </div>
+        <br><br><br>
+    </div>
+    <div style="border: 5px solid black;">
+        <footer>
+        <div class="footercontainer">
+            <div class="qlink">
+                <div class="map">
+                    <a href="https://www.google.com/maps"><img src="Images/map.png" alt="Map" height="240px" width="300px"></a>
+                </div>
+                    QUICK LINK <br><br>
+                        <a href="index.html">Home</a><br><br>
+                        <a href="about.html">About Us</a><br><br>
+                        <a href="gallery.html">Gallery</a><br><br>
+                        <a href="contact.html">Contact</a><br><br>
+                        <a href="reservation.html">Reservation</a><br><br>
+                <div class="socialIcon">
+                     CONNECT WITH US:
+                    <br><br>
+                        <a href="https://www.facebook.com/"><img src=" Images/Facebook.png " alt="facebook logo" height="30px" width="30px"></a>
+                        <a href="https://www.instagram.com/"><img src=" Images/instagram.png " alt="instagram logo" height="30px" width="30px"></a>
+                        <a href="https://www.twitter.com/"><img src=" Images/twitter.png " alt="twitter logo" height="30px" width="30px"></a>
+                        <a href="https://www.tiktok.com/"><img src=" Images/tiktok.png " alt="tiktok logo" height="30px" width="30px"></a>
+                        <a href="https://www.youtube.com/"><img src=" Images/youtube.png " alt="youtube logo" height="30px" width="30px"></a>
+                        <br><br><br>
+                        <a href="https://www.youtube.com/"><img src=" Images/location.png " alt="location logo" height="30px" width="30px"></a>    Jhamsikhel, Lalitpur
+                        <br><br><br>
+                        Contact us: <a href="#"> +977  9841571623 </a>
+                </div>
+            </div>
+        </div>
+        </footer>
+    </div>
+    <div class="Copyright">
+        <div style="height: 15px;">
+            Copyright &copy;2023: Designed by Anuska
+        </div>
+    </div>
+    </div>
+</body>
+</html>
+
