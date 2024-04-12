@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title> Home-Grand Gala Grandeur </title>
+    <link rel="icon" href="logo.png" type = "image/x-icon">      
+</head>
+<body>
+    <div style="border: 5px solid black;">
+
+    <!--Header-->
+        <p> </p> 
+        
+    <!--Navigation Bar-->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li style="float: right;" ><a href="reservation.html">Reservation</a></li>
+        </ul>
+    </nav>
+
+    <!--Sideshow pictures container creation-->
+    <div style="border: 3px solid black;">
+        <div class="SlideshowContainer">
+            <div class="mySlides fade">
+                <div class="page">1 / 7</div>
+                <img src="Images/slide.jpg" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <div class="page">2 / 7</div>
+                <img src="Images/slide1.jpg" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <div class="page">3 / 7</div>
+                <img src="Images/slide2.jpg" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <div class="page">4 / 7</div>
+                <img src="Images/slide3.jpg" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <div class="page">5 / 7</div>
+                <img src="Images/slide4.jpg" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <div class="page">6 / 7</div>
+                <img src="Images/slide5.jpg" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <div class="page">7 / 7</div>
+                <img src="Images/slide6.jpg" style="width:100%">
+            </div>
+        </div>
+    </div>
+    <!--backgroung image-->
+    <div class="bgimage">
+        <br>
+        <!--dots-->
+        <div style="text-align:center">
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span>
+            <span class="dot"></span> 
+        </div>
+    <!--Javascript for slideshow-->
+    <script>
+        let slideIndex = 0;
+        showSlides();
+        //shows image in slide show
+        function showSlides() {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 4000); // Change image every 4 seconds
+        }
+    </script>
+    <h6>WHERE WE BRING YOUR VISION TO REALITY</h6>
+    <div class="initialContainer">
+        <div style=" border: 4px solid #3e3f34; background-color: #959684">
+            <h6>------------------------------WELCOME------------------------------</h6>
+        </div>
+    </div>
+    <!--side by side container-->
+    <div class="customerContainer">
+        <div class="customerimg">
+            <div style=" border: 4px solid #3e3f34; background-color: #959684 ">
+                <img src="Images/customer.jpg" alt="Satisfied Customer" width="600px" height="762px">
+            </div>
+        </div>
+        <div style=" border: 4px solid #3e3f34; background-color: #959684 ">
+        <h5>
+        <b>Dear Valued Customer,</b>
+        <br>
+        <br>
+        We extend our heartfelt greetings to you and we are glad that you are currently visiting our website to learn about our venue. 
+        <br>
+        <br>
+        <br>
+        At The Grand Gala Grandeur, we understand that every celebration is special and unique. Whether you're planning a wedding, corporate event, birthday party, or any other special occasion, we are dedicated to make your event memorable. 
+        <br>
+        <br>
+        <br>
+        Our team is committed to provide you with exceptional service and ensure you that every detail of your event is firmly planned and executed to perfection. From our elegant event spaces and stunning decoration to our appetizing cuisine and top-notch arrangement, we strive to exceed your thinking and create magical moments that you and your guests will cherish forever.
+        <br>
+        <br>
+        <br>
+        We invite you to explore our website to learn more about our services, facilities, and past events. If you have any questions or require assistance, please do not hesitate to contact us. We are here to assist you every step of the way and look forward to helping you create memories that last a lifetime. 
+        <br>
+        <br>
+        <br>
+        Thank you for choosing The Grand Gala Grandeur. We are honored to be a part of your special celebration.
+        <br>
+        <br>
+        <br>
+        Warm Reagards,
+        <br>
+        Grand Gala Grandeur
+        </h5>
+        </div>
+    </div>
+    </div>
+    <!--footer-->
+    <div style="border: 5px solid black;">
+        <footer>
+        <!--#3 side by side container-->
+        <div class="footercontainer">
+            <div class="qlink">
+                <div class="map">
+                    <a href="https://www.google.com/maps"><img src="Images/map.png" alt="Location" height="240px" width="300px"></a>
+                </div>
+                    QUICK LINK <br><br>
+                        <a href="index.html">Home</a><br><br>
+                        <a href="about.html">About Us</a><br><br>
+                        <a href="gallery.html">Gallery</a><br><br>
+                        <a href="contact.html">Contact</a><br><br>
+                        <a href="reservation.html">Reservation</a><br><br>
+                <div class="socialIcon">
+                    CONNECT WITH US:
+                    <br><br>
+                        <a href="https://www.facebook.com/"><img src=" Images/Facebook.png " alt="facebook logo" height="30px" width="30px"></a>
+                        <a href="https://www.instagram.com/"><img src=" Images/instagram.png " alt="instagram logo" height="30px" width="30px"></a>
+                        <a href="https://www.twitter.com/"><img src=" Images/twitter.png " alt="twitter logo" height="30px" width="30px"></a>
+                        <a href="https://www.tiktok.com/"><img src=" Images/tiktok.png " alt="tiktok logo" height="30px" width="30px"></a>
+                        <a href="https://www.youtube.com/"><img src=" Images/youtube.png " alt="youtube logo" height="30px" width="30px"></a>
+                        <br><br><br>
+                        <a href="https://www.youtube.com/"><img src=" Images/location.png " alt="location logo" height="30px" width="30px"></a>    Jhamsikhel, Lalitpur
+                        <br><br><br>
+                        Contact us: <a href="#"> +977  9841571623 </a>
+
+                </div>
+            </div>
+        </div>
+        </footer>
+    </div>
+    <!--copyright Container-->
+    <div class="Copyright">
+        <div style="height: 15px;">
+            Copyright &copy;2023: Designed by Anuska
+        </div>
+    </div>
+    </div>
+</body>
+</html>
