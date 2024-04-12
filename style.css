@@ -1,0 +1,207 @@
+body {
+        margin: 0px 100px;
+        background-position: center;
+        padding: 0px;
+        max-width: 1320px;
+        background-color: #b1a296;
+    }
+/* header */
+p   {
+        margin-top: 0px;
+        border: 1px solid #333232;
+        padding: 80px;
+        background-image: url('Images/header.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-bottom: 0px;
+    }
+/* navigation bar*/
+ul {
+        margin-top: 0px; 
+        padding: 0;
+        list-style: none;
+        background: #333232;
+        margin-bottom: 0px;
+    }
+ul li { 
+        display: inline-block;}
+ul li a 
+    {
+        display: block;
+        padding: 10px 20px;
+        color: #ccbdbd;
+        text-align: left;
+        text-decoration: none;
+    }
+ul li a:hover { 
+        color: #030303;
+        background: #f9f8f8;}
+/* Home page */
+.mySlides img {
+    vertical-align: middle;
+    height: 580px;
+    }
+.mySlides {
+    display: none;
+    }
+/* Slideshow container */
+.SlideshowContainer {
+    max-width: 1320px;
+    position: relative;
+    margin: auto;
+    }
+/* Numbers */
+.page {
+    color: #f2f2f2;
+    font-size: 25px;
+    text-align: left;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0px;
+    right: 2px;
+    }
+.text{
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+    font-size: 60px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 300px;
+    width: 100%;
+    
+    text-align: center;}
+/* The dots/bullets/indicators */
+.DotContainer {
+    text-align: center;
+    margin-top: 20px;
+    }
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 2px;
+    background-color: #bbb;
+    border-radius: 100%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    }
+.active {
+        background-color: #8c8c8c;
+        }
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+    }
+@keyframes fade {
+        from {opacity: .4} 
+        to {opacity: 1}
+    }
+.bgimage {
+        background-image: url(Images/background.jpg);
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-size: cover;
+
+}
+.initialContainer {
+    padding: 40px;
+    }
+h6 { 
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    font-style: oblique;
+    color: #c8c8c8;
+    text-shadow: 3px 3px 4px #000000;
+}  
+.customerContainer {
+    padding: 40px;
+}
+.customerimg {
+    float: right;
+}
+h5 {
+    font-size: large;
+    padding: 10px;
+}
+/* About Us page */
+.aboutContainer {
+    padding: 40px;
+}
+.abtimg {
+    float: left;
+}
+.teamContainer {
+    padding: 40px;
+}
+.teamimg {
+    float: right;
+}
+.serviceContainer {
+    padding: 40px;
+}
+.servimg {
+    float: left;
+}
+/* Gallery page */
+.gimage {
+    background-image: url(Images/gbg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+}
+.h4 {
+    font-size: xx-large;
+    text-align: center;
+    color: white;
+}
+/* Contact page */
+.contactContainer {
+    padding: 40px;
+    padding-right: 15px;
+}
+.contactimg {
+    float: right;
+    position: relative;
+    top: 10px;
+}
+/* Reservation page */
+.reservationContainer {
+    padding: 10px;
+}
+.reserveimg {
+    float: left;
+    position: relative;
+    top: 10px;
+}
+/* Fotter */
+footer {
+    background-color: #3a4a4d;
+    padding: 10px;
+    color: white;
+} 
+.footercontainer {
+    padding: 10px;
+}
+.map img {
+    float: left;
+    }
+.qlink{
+    text-align: center;
+    margin: 10px;
+}
+.qlink a {
+    color: #f9f8f8;
+}
+.socialIcon {
+    float:  right;
+    bottom: 210px;
+    position: relative;
+}
+.Copyright {
+    background-color:rgb(44, 44, 44);
+    padding: 8px;
+    text-align: center;
+    color: white;
+}
